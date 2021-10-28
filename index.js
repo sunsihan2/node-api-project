@@ -5,7 +5,7 @@ const server = express()
 const PORT = process.env.PORT || 9000
 server.use(express.json())
 server.use(cors())
-server.get('/api/hello', (req, res,next)=> {
+server.get('/api/users', (req, res,next)=> {
     res.json({
         message:'api is working'
     })
